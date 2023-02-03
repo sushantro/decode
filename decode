@@ -1,0 +1,8 @@
+select nvl((select personid from htd where lastname='john'),(select personid from  persons where lastname='dd' and rownum<2))from dual;
+
+
+decode
+
+select sum(personid),lastname  from htd group by lastname ,decode(lastname,'sush',01,'jjkkk',02);
+
+
